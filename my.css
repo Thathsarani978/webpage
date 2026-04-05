@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:lightblue;
+    color: #1e293b;
+    
+}
+
+/* HEADER */
+header {
+    background: #ADA7EB;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #334155; 
+    z-index: 1000; /* keeps it above other content */
+}
+
+.profile-pic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #38bdf8;
+}
+
+/* NAVBAR */
+nav {
+    background: #334155;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+}
+
+/* PROJECT CARDS */
+.project {
+    background: #CAEBEB;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    
+}
+
+/*  ANIMAL GRID  */
+
+#animal-grid-container {
+    display: none;
+    margin-top: 15px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    gap: 5px;
+    justify-content: center;
+}
+
+#container canvas {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+/*  SORTING VISUALIZER  */
+
+#sorting-container {
+    display: none;
+    margin-top: 15px;
+}
+
+#visualizer {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#motorcycle {
+    position: absolute;
+    font-size: 35px;
+    display: none;
+    transform: scaleX(-1);
+}
+
+.bar {
+    width: 7px;
+    background-color: black;
+    margin: 0px 1px;
+}
+
+/*  CHESS GAME  */
+
+#chess-container {
+    display: none;
+    margin-top: 15px;
+}
+#chess-board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.cell {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light { background-color: white; }
+.dark  { background-color: gray; }
+
+#chess-board img {
+    width: 40%;
+}
+
+.invert-color {
+    filter: invert(80%);
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
